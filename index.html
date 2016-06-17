@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>滴滴</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<header>
+    <!--<a href="index.html"></a>-->
+    滴滴平台
+</header>
+<section >
+    <div class="index-img" id="index-img">
+        <ul class="img-content table" >
+            <li><img src="images/index-banner1.png" alt=""/></li>
+            <li><img src="images/index-banner2.png" alt=""/></li>
+            <li><img src="images/index-banner3.png" alt=""/></li>
+        </ul>
+        <ul class="img-control">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="index-bottom">
+        <ul class="bottom-content table">
+            <li>
+                <a href="#">
+                    <img src="images/index1.png" alt=""/>
+                    <p>创业项目</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index2.png" alt=""/>
+                    <p>平台风采</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index3.png" alt=""/>
+                    <p>报名流程</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="bottom-content table">
+            <li>
+                <a href="#">
+                    <img src="images/index4.png" alt=""/>
+                    <p>客户管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index5.png" alt=""/>
+                    <p>财务管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index6.png" alt=""/>
+                    <p>新闻公告</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="bottom-content table">
+            <li>
+                <a href="#">
+                    <img src="images/index7.png" alt=""/>
+                    <p>工程案例</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index8.png" alt=""/>
+                    <p>修改密码</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="images/index9.png" alt=""/>
+                    <p>注册客户</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<footer class="table">
+    <a href="index.html" class="active" >
+        <i></i>
+        <p>首页</p>
+    </a>
+    <a href="project.html">
+        <i></i>
+        <p>创业项目</p>
+    </a>
+    <a href="process.html">
+        <i></i>
+        <p>报名流程</p>
+    </a>
+    <a href="platform.html">
+        <i></i>
+        <p>平台风采</p>
+    </a>
+    <a href="user.html">
+        <i></i>
+        <p>我的滴滴</p>
+    </a>
+</footer>
+<script >
+    var controler = document.getElementById("index-img");
+    var images = controler.firstElementChild;
+    var controls = controler.lastElementChild.children;
+    var index = 0;
+    setInterval(function(){
+        index= index + 1 === 3 ? 0 : index + 1;
+        images.style.webkitTransform = "translate3d(-"+ index/3.0 * 100 + "%, 0, 0)";
+        images.style.controler = "translate3d(-"+ index/3.0 * 100 + "%, 0, 0)";
+        controls[0].classList.remove("active");
+        controls[1].classList.remove("active");
+        controls[2].classList.remove("active");
+        controls[index].classList.add("active");
+    }, 3000);
+
+</script>
+</body>
+</html>

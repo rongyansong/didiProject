@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>滴滴</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header>
+    <a class="back" href="index.html"></a>
+    滴滴平台
+</header>
+<div class="select table">
+    <a href="#p1" class="active" onclick="changeTab(this)">钻石创业者</a>
+    <a href="#p2" onclick="changeTab(this)">金牌创业者</a>
+    <a href="#p3" onclick="changeTab(this)">银牌创业者</a>
+</div>
+<section class="project-page">
+    <div class="project-select active" id="p1">
+        <img  class="project-img" src="images/tab1.png" alt=""/>
+        <article>
+            <div class="background-color2">
+                <h3>服务内容</h3>
+                <img class="pro-min-img" src="images/pro-1.png" alt=""/>
+                <p class="project-pro">提供以上六个学院的技术支持，咨询服务、课件学习等内容</p>
+            </div>
+            <div class="background-color">
+                <h3>创业者享受的回报收益</h3>
+                <img class="pro-last-img" src="images/pro-2.png" alt=""/>
+                <div class="article-main">
+                    <p>X:渠道可享有股份额度</p>
+                    <p>Y:渠道个人业绩流水总计</p>
+                    <p>Z:历年渠道全部各方业绩总额度累计；</p>
+                    <p>b：宏鑫互联网集团所拥有的上市充足公司总古数</p>
+                    <p>q：宏鑫互联网集团膳食总股本数的20%；</p>
+                </div>
+            </div>
+            <div class="article-main background-color2">
+                <h3>创业者享受的回报收益</h3>
+                <p>1.N>10人；</p>
+                <p>2.业绩流水》3000万；</p>
+                <p>当满足以上2个条件是，钻石创业者才能获得期权。</p>
+                <p>注：上面的Y、Z为财务数据，由部门按其提供，录入即可。</p>
+            </div>
+        </article>
+    </div>
+    <div class="project-select" id="p2">
+        <img  class="project-img" src="images/tab2.png" alt=""/>
+        <article>
+            <div class="background-color2">
+                <h3>服务内容</h3>
+                <img class="pro-min-img" src="images/pro-1.png" alt=""/>
+                <p class="project-pro">提供以上六个学院的技术支持，咨询服务、课件学习等内容</p>
+
+            </div>
+            <div class="background-color">
+                <h3>创业者享受的回报收益</h3>
+                <img class="pro-last-img" src="images/pro-2.png" alt=""/>
+                <div class="article-main">
+                    <p>X:渠道可享有股份额度</p>
+                    <p>Y:渠道个人业绩流水总计</p>
+                    <p>Z:历年渠道全部各方业绩总额度累计；</p>
+                    <p>b：宏鑫互联网集团所拥有的上市充足公司总古数</p>
+                    <p>q：宏鑫互联网集团膳食总股本数的20%；</p>
+                </div>
+            </div>
+            <div class="article-main background-color2">
+                <h3>创业者享受的回报收益</h3>
+                <p>1.N>10人；</p>
+                <p>2.业绩流水》3000万；</p>
+                <p>当满足以上2个条件是，钻石创业者才能获得期权。</p>
+                <p>注：上面的Y、Z为财务数据，由部门按其提供，录入即可。</p>
+            </div>
+        </article>
+    </div>
+    <div class="project-select" id="p3">
+        <img  class="project-img" src="images/tab3.png" alt=""/>
+        <div class="background-color2">
+            <h3>服务内容</h3>
+            <img class="project-img" src="images/pro-4.png" alt=""/>
+            <p class="project-pro">提供以上六个学院的技术支持，咨询服务、课件学习等内容</p>
+        </div>
+        <div class="background-color">
+            <h3>创业者享受的回报收益</h3>
+            <img class="project-img" src="images/pro-3.png" alt=""/>
+        </div>
+    </div>
+</section>
+<footer class="table">
+    <a href="index.html" >
+        <i></i>
+        <p>首页</p>
+    </a>
+    <a href="project.html" class="active">
+        <i></i>
+        <p>创业项目</p>
+    </a>
+    <a href="process.html">
+        <i></i>
+        <p>报名流程</p>
+    </a>
+    <a href="platform.html">
+        <i></i>
+        <p>平台风采</p>
+    </a>
+    <a href="user.html">
+        <i></i>
+        <p>我的滴滴</p>
+    </a>
+</footer>
+
+<script>
+
+    function changeTab(ele){
+        var target=ele.getAttribute('href').substring(1);
+        var panel=document.getElementById(target);
+        changeActive(ele);
+        changeActive(panel);
+        event.preventDefault();
+    }
+    function changeActive(ele){
+        var elements=ele.parentElement.children;
+        for(var i=0,len=elements.length;i<len;i++){
+            elements[i].classList.remove('active');
+        }
+        ele.classList.add('active');
+    }
+
+
+</script>
+</body>
+</html>

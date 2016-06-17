@@ -1,0 +1,336 @@
+/*作者:宋荣燕，版本：version1，日期：2016/6/17*/
+/*所有页面都需要的样式*/
+*{  margin: 0;  padding: 0;  box-sizing: border-box}
+html,body{ height: 100%; -webkit-user-select: none;}
+html{ font-size: 100px;}
+body{overflow:hidden;font-size: 0.14rem; margin: 0 auto; background: #f1f1f1; font-family: Helvetica Neue,Helvetica,microsoft yahei,sans-serif;}
+ul{ list-style: none}
+a{ text-decoration: none; color: inherit; -webkit-tap-highlight-color: rgba(255, 0, 0, 0);}
+
+
+/*列表样式*/
+.table{
+    display: table;
+}
+.table>*{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*header和footer的样式*/
+header .back{
+    background-image: url("../images/back.png");
+    width: 20px;
+    height: 17px;
+    background-size: 20px 17px;
+    top:50%;
+    left:15px;
+    position: absolute;
+    transform: translatey(-50%);
+}
+header,footer{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+header{
+    height: 44px;
+    top: 0;
+    line-height: 44px;
+    background: #006DB8;
+    color: white;
+    font-size: .18rem;
+}
+footer{
+    height: 49px;
+    bottom: 0;
+    background: black;
+}
+section{
+    width: 100%;
+    position: absolute;
+    top:44px;
+    bottom: 49px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+footer a{
+    width: 20%;
+    height:49px;
+    color: white;
+}
+footer i{
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-size: 25px 25px;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+footer a.active{
+    color: #FF0504;
+;
+}
+footer a:nth-child(1) i{
+    background-image: url("../images/nav10.png");
+}
+footer a:nth-child(1).active i{
+    background-image: url("../images/nav11.png");
+}
+footer a:nth-child(2) i{
+    background-image: url("../images/nav20.png");
+}
+footer a:nth-child(2).active i{
+    background-image: url("../images/nav21.png");
+}
+footer a:nth-child(3) i{
+    background-image: url("../images/nav30.png");
+}
+footer a:nth-child(3).active i{
+    background-image: url("../images/nav31.png");
+}
+footer a:nth-child(4) i{
+    background-image: url("../images/nav40.png");
+}
+footer a:nth-child(4).active i{
+    background-image: url("../images/nav41.png");
+}
+footer a:nth-child(5) i{
+    background-image: url("../images/nav50.png");
+}
+footer a:nth-child(5).active i{
+    background-image: url("../images/nav51.png");
+}
+
+
+/*首页*/
+.index-img{
+    position: relative;
+    overflow: hidden;
+}
+.img-content{
+
+    width: 300%;
+    overflow: hidden;
+    transition: all 1s;
+}
+.img-content img{
+    width: 100%;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.index-img .img-control{
+    width: 54px;
+    height: 8px;
+    left: 50%;
+    bottom: 10px;
+    position: absolute;
+    -webkit-transform: translatex(-50%);
+}
+.img-control li{
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+    float: left;
+    margin: 0 5px;
+}
+.img-control .active{
+    background: lightskyblue;
+}
+.bottom-content{
+    width: 100%;
+    text-align: center;
+    margin:0 0 10px;
+    padding: 10px 0;
+    background: #fff;
+}
+.bottom-content img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+
+/*project样式*/
+.project-page{
+    width: 100%;
+    margin-top:40px;
+}
+.select{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 44px;
+    background: #f3f3f3;
+}
+.select a{
+    text-decoration: none;
+    color: #333;
+}
+.select .active{
+    background: white;
+    color: blue;
+}
+section .project-select{
+    display: none;
+}
+section .project-select.active{
+    display: block;
+}
+h3{
+    margin: 10px auto;
+    text-align: center;
+}
+.project-img{
+    max-width: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+.background-color{
+    background: #f5f5f5;
+    padding-top: 10px;
+}
+.background-color2{
+    background: white;
+    padding: 10px 0;
+}
+.pro-min-img{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.project-pro{
+    color: #555555;
+    font-size: 0.10rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.pro-last-img{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.article-main{
+    padding: 10px 0;
+}
+.article-main p{
+    color: #555;
+    font-size: 0.12rem;
+    line-height: 2;
+    text-indent: 2em;
+}
+
+/*process样式*/
+.process-banner img{
+    max-width: 100%;
+    width: 100%;
+}
+.process-banner2 img{
+    max-width: 100%;
+    width: 100%;
+    margin:10px auto;
+}
+
+
+/*platform样式*/
+.platform-banner img{
+    max-width: 100%;
+    width: 100%;
+}
+.platform-article{
+    padding: 0 10px;
+}
+.platform-title{
+    margin: 0.2rem auto 0.1rem;
+    font-size: 0.16rem;
+    color: red;
+}
+.platform-conpany{
+    margin: 0.2rem auto 0.1rem;
+    font-weight: bold;
+}
+.platform-main{
+    color: #333;
+    line-height: 1.5;
+    text-indent: 2em;
+    margin-bottom: 10px;
+}
+
+
+/*user样式*/
+.user-background{
+    height: 200px;
+    background-image: url("../images/banner5.png");
+    background-size: cover;
+    position: relative;
+}
+.user-box{
+    width: 100px;
+    height: 133px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.user-box img{
+    width: 80px;
+    height: 80px;
+}
+.user-box p{
+    height: 0.18rem;
+    color: #333333;
+}
+.user-box a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background: blue;
+    border-radius: 5px;
+    padding: 6px 20px;
+    margin-top: 4px;
+}
+.user-content{
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+}
+.list{
+    display: block;
+    height: 46px;
+    vertical-align: middle;
+    background: white;
+    position: relative;
+    padding: 15px 60px;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333333;
+}
+.list .user-img{
+    max-width: 28px;
+    height: 29px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translatey(-50%);
+}
+.list .user-enter{
+    width: 15px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translatey(-50%);
+}
+.list span{
+    position: absolute;
+    left: 100px;
+    top: 50%;
+    transform: translatey(-50%);
+}
